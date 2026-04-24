@@ -350,12 +350,16 @@ h2 {
   font-weight: 700;
 }
 
-.photo-grid,
 .portfolio-grid,
 .mosaic-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.photo-grid {
+  column-count: 3;
+  column-gap: 1rem;
 }
 
 .focus-grid {
@@ -537,26 +541,27 @@ h2 {
 }
 
 .photo-card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  min-height: 280px;
-  border-radius: 26px;
+  width: 100%;
+  margin: 0 0 1rem;
+  break-inside: avoid;
+  border-radius: 0 0 26px 26px;
   border: 1px solid var(--line);
   background: var(--panel-strong);
   box-shadow: var(--shadow);
 }
 
-.photo-card img {
-  height: 100%;
-  object-fit: cover;
-  transition: transform 240ms ease;
+.photo-frame {
+  overflow: hidden;
 }
 
-.photo-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(5, 8, 22, 0.78), rgba(5, 8, 22, 0.08) 55%);
+.photo-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 240ms ease;
 }
 
 .photo-card:hover img {
@@ -564,21 +569,25 @@ h2 {
 }
 
 .photo-card figcaption {
-  position: absolute;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 1;
+  padding: 1rem 1.1rem 1.2rem;
   font-weight: 700;
+  line-height: 1.35;
+}
+
+.photo-card figcaption p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .photo-card.tall {
-  grid-row: span 2;
-  min-height: 580px;
+  grid-row: auto;
 }
 
 .photo-card.wide {
-  grid-column: span 2;
+  grid-column: auto;
 }
 
 .narrow {
@@ -595,10 +604,13 @@ h2 {
   .focus-grid,
   .focus-bubbles,
   .work-preview-grid,
-  .photo-grid,
   .portfolio-grid,
   .mosaic-grid {
     grid-template-columns: 1fr;
+  }
+
+  .photo-grid {
+    column-count: 2;
   }
 
   .domain-card {
@@ -609,7 +621,6 @@ h2 {
   .photo-card.wide {
     grid-row: auto;
     grid-column: auto;
-    min-height: 320px;
   }
 
   .focus-bubble {
@@ -629,6 +640,10 @@ h2 {
 }
 
 @media (max-width: 640px) {
+  .photo-grid {
+    column-count: 1;
+  }
+
   .page-shell {
     width: min(100% - 1rem, 1180px);
     padding-top: 0.75rem;
