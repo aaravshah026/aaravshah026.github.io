@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ed Tech Portfolio | Aarav Shah</title>
+  <meta
+    name="description"
+    content="Education technology portfolio for Aarav Shah featuring a HackerRank group project and an individual Figma project."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Aarav Shah</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="academic.html">Academic Work</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link active" href="edtech.html">Ed Tech</a>
+        <a class="nav-link" href="photography.html">Photography</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="portfolio-hero portfolio-hero-expanded">
+        <p class="eyebrow">Ed Tech Portfolio</p>
+        <h1>Aarav's Ed Tech Portfolio.</h1>
+        <p class="hero-text academic-intro">
+          Throughout this class, I worked on Feature 4 for Group 1. This feature aimed to improve HackerRank's 
+          detection of prior knowledge through Partial Code Completion. I also completed an individual assignment, 
+          How to Get a Job.
+        </p>
+      </section>
+
+      <section class="preview-grid-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Project One</p>
+            <h2>HackerRank Group Project</h2>
+          </div>
+        </div>
+
+        <div class="work-stack">
+          <article class="domain-card">
+            <div class="domain-copy">
+              <h2>Background & Pain Points.</h2>
+              <p>
+                The application that we worked with is HackerRank, which is a coding practice platform
+                designed for programmers looking for interview preparation. The main pain points are that
+                HackerRank assumes prior knowledge, uses complicated terminology, lacks narrative around
+                concepts, and has a non-intuitive interface.
+              </p>
+            </div>
+            <div class="domain-tags">
+              <span>Problem Space</span>
+              <span>Target Users</span>
+              <span>Pain Points</span>
+            </div>
+          </article>
+
+          <article class="domain-card domain-card-full">
+            <div class="domain-copy">
+              <h2>UX Research.</h2>
+              <p>
+                Our contextual inquiries found that users feel that discussions either give away answers or
+                are not useful at all, and switching tabs for getting help can disrupt workflow. We contacted
+                5 people to do contextual inquiries for HackerRank. Then, we created an affinity diagram to
+                group these issues into categories. We found that solutions included refresher modules, tracing
+                through code, labels, and refresher questions. Users said that standalone self-reporting
+                proficiency is not a good standalone measure of prior knowledge, and must be paired with
+                other features.
+              </p>
+              <div class="case-study-images case-study-images-single">
+                <figure class="case-study-image">
+                  <img
+                    class="case-study-media"
+                    src="ed_tech_images/Affinity Diagram.jpg"
+                    alt="Affinity diagram created during UX research for the HackerRank group project"
+                  >
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="domain-card">
+            <div class="domain-copy">
+              <h2>Design Inspirations.</h2>
+              <p>
+                The design for Feature 4, Partial Code Completion, is informed by learning science principles
+                such as scaffolding, which occurs when users receive partial support before completing full
+                problems. This feature uses partially completed code to isolate specific skills that users
+                need to solve the actual problem and tests to see if they have the skill. It also emphasizes
+                procedural knowledge, since it is the strongest predictor of final grades, as stated in the
+                course readings.
+              </p>
+            </div>
+            <div class="domain-tags">
+              <span>Scaffolding</span>
+              <span>Procedural Knowledge</span>
+            </div>
+          </article>
+
+          <article class="domain-card domain-card-full">
+            <div class="domain-copy">
+              <h2>Low & Mid-Fidelity Prototyping.</h2>
+              <p>
+                The first image is the low fidelity prototype. It showed that the user would click through several
+                partial code completion problems until they found a difficulty level with skills that they could use
+                correctly. The feedback on this was to use consistent naming and make sure that the user understands 
+                the big picture of what they were doing. I made those changes for the medium fidelity prototype,
+                seen in the second image. The main feedback for this was UI-related, such as making the clickable
+                buttons look different and the two "check" buttons look different. I implemented this in the first
+                high fidelity prototype.
+              </p>
+              <div class="case-study-images">
+                <figure class="case-study-image">
+                  <img
+                    class="case-study-media"
+                    src="ed_tech_images/Interface Storyboard.jpeg"
+                    alt="Interface storyboard for the HackerRank group project"
+                  >
+                </figure>
+                <figure class="case-study-image">
+                  <img
+                    class="case-study-media"
+                    src="ed_tech_images/med fi prototype.gif"
+                    alt="Mid-fidelity prototype animation for the HackerRank group project"
+                  >
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="domain-card domain-card-full">
+            <div class="domain-copy">
+              <h2>User Testing & Final Prototype.</h2>
+              <p>
+                The first image is from prototype 0. I took the medium fidelity prototype and converted it into a
+                Figma design, implementing the feedback from before as well. The main feedback I got from contextual
+                inquiries on this prototype was to fix the buttons, use more colors, use actual code lines instead of 
+                "completed code", and make the prototype more immersive. I did all of this, taking feedback from my 
+                contextual inquiries seen above along with TA and professor feedback. I got to the second image, which
+                is the final prototype for Partial Code Completion for HackerRank.
+              </p>
+              <div class="case-study-images">
+                <figure class="case-study-image">
+                  <img
+                    class="case-study-media"
+                    src="ed_tech_images/high fi prototype.gif"
+                    alt="High-fidelity prototype animation for the HackerRank group project"
+                  >
+                </figure>
+                <figure class="case-study-image">
+                  <img
+                    class="case-study-media"
+                    src="ed_tech_images/final prototype.gif"
+                    alt="Final prototype animation for the HackerRank group project"
+                  >
+                </figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="preview-grid-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Project Two</p>
+            <h2>Individual Figma Project</h2>
+          </div>
+        </div>
+
+        <div class="work-stack">
+          <article class="domain-card">
+            <div class="domain-copy">
+              <h2>Design Rationale.</h2>
+              <p>
+                I chose this topic because it’s something that I’ve had a lot of personal experience doing. I’ve 
+                also spoken at webinars about behavioral interviews for job applications. The main user flow I 
+                designed involves the user seeing the lessons on the steps to get a job, then clicking the 
+                “behavioral interview” lesson, learning the content taught in the scrollable frame, answering the 
+                quiz questions (correctly, since this is a happy path), and finishing the lesson. Key design 
+                decisions include a top-down layout and a simple navigation system to make the app user-friendly. 
+                I included component sets wherever I could to make the app as user-friendly as possible; having 
+                component sets for buttons helps the user know when they’re about to click it. I learned that a 
+                component set helps reduce the number of screens I need throughout the screens page. I don’t have 
+                to have two separate screens for when the user hovers over a button, for example. I also learned 
+                that designing in Figma is easier than it looks, and I can create a realistic clickable prototype 
+                without writing any code!
+              </p>
+            </div>
+            <div class="domain-tags">
+              <span>Problem Space</span>
+              <span>Target Users</span>
+              <span>Pain Points</span>
+            </div>
+          </article>
+
+          <article class="domain-card domain-card-full">
+            <div class="domain-copy">
+              <h2>Prototype Section.</h2>
+              <p>
+                The picture below is a GIF of the main flow of the prototype. It includes the main features of the
+                scrollable lesson, components for answering the quiz questions, and navigation features like buttons.
+              </p>
+              <div class="case-study-images case-study-images-single">
+                <figure class="case-study-image">
+                  <img
+                    class="case-study-media"
+                    src="ed_tech_images/individual prototype.gif"
+                    alt="Individual prototype animation for the individual project"
+                  >
+                </figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

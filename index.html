@@ -1,1 +1,148 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarav Shah | Personal Portfolio</title>
+  <meta
+    name="description"
+    content="Personal portfolio for Aarav Shah spanning computer science, finance, artificial intelligence, mathematics, and photography."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Aarav Shah</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="academic.html">Academic Work</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="edtech.html">Ed Tech</a>
+        <a class="nav-link" href="photography.html">Photography</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero personal-hero">
+        <div class="hero-copy hero-copy-wide">
+          <div class="hero-copy-body">
+            <p class="eyebrow">Personal Portfolio</p>
+            <h1>Exploring my interests with passion.</h1>
+            <p class="hero-text">
+              I graduated from Georgia Tech with a BS in Computer Science in 2025, followed by an MS in
+              Computer Science in 2026. My work is shaped by a strong interest in finance, artificial
+              intelligence, education technology, and mathematics, and I like building at the overlap between those fields.
+              Outside of that, photography gives me another way to study structure, detail, and perspective.
+            </p>
+          </div>
+          <div class="hero-actions hero-actions-bottom">
+            <a class="button button-primary" href="academic.html">View Academic Work</a>
+            <a class="button button-secondary" href="projects.html">View Projects</a>
+          </div>
+        </div>
+
+        <aside class="headshot-card">
+          <p class="eyebrow">Profile</p>
+          <div class="headshot-frame">
+            <img
+              class="headshot-image"
+              src="headshot.JPEG"
+              alt="Headshot of Aarav Shah"
+              onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
+            >
+            <div class="headshot-placeholder" aria-hidden="true">
+              <span>Add `headshot.JPEG` here</span>
+            </div>
+          </div>
+          <p class="headshot-note">
+            Georgia Tech CS graduate based in Charlotte, exploring analytical and creative work side by side.
+          </p>
+        </aside>
+      </section>
+
+      <section id="focus-areas" class="focus-bubbles-section">
+        <div class="section-heading compact-heading">
+          <div>
+            <p class="eyebrow">Focus Areas</p>
+            <h2>My four areas of academic work.</h2>
+          </div>
+        </div>
+
+        <div class="focus-bubbles">
+          <article class="focus-bubble">
+            <p class="eyebrow">Finance</p>
+            <p>Besides my job as a Quantitative Analyst, I've developed a deep reinforcement learning agent paired with an LLM to
+              view market sentiment to trade SPY and beat the market.
+            </p>
+          </article>
+          <article class="focus-bubble">
+            <p class="eyebrow">Artificial Intelligence</p>
+            <p>My projects and coursework in deep learning, natural language processing, computer vision, and education technology 
+              explore cutting-edge innovation in artificial intelligence. I completed my BS and MS in Computer Science with 
+              concentrations in artificial intelligence.
+            </p>
+          </article>
+          <article class="focus-bubble">
+            <p class="eyebrow">Mathematics</p>
+            <p>I spent two years as a teaching assistant for Discrete Mathematics from 2023-2025, covering topics like probability,
+              logic and proofs, graph theory, and algorithms. I also completed my BS in Computer Science with a concentration in 
+              theory, taking classes related to mathematics.
+            </p>
+          </article>
+          <article class="focus-bubble">
+            <p class="eyebrow">Education Technology</p>
+            <p>My time leading Connect Me, an nonprofit tutoring service, has helped me grow my passion for education technology.
+              I've also taken a class on education technology, where I designed my own extensions for an application to enhance education
+            across their platform. </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="preview-grid-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Explore More</p>
+            <h2>Dedicated pages for my academic work, projects, and photography.</h2>
+          </div>
+        </div>
+
+        <div class="work-preview-grid">
+          <article class="preview-card preview-card-large">
+            <p class="eyebrow">Academic Work</p>
+            <h3>Professional experiences, research, teaching, and technical growth.</h3>
+            <p>
+              A page focused on internships, volunteer work, research, and academic milestones.
+            </p>
+            <a class="text-link" href="academic.html">Open academic page</a>
+          </article>
+          <article class="preview-card">
+            <p class="eyebrow">Projects</p>
+            <h3>Independent builds, technical experiments, and cross-disciplinary work.</h3>
+            <p>
+              A home for software, AI, finance, and education technology projects.
+            </p>
+            <a class="text-link" href="projects.html">Open projects page</a>
+          </article>
+          <article class="preview-card">
+            <p class="eyebrow">Photography</p>
+            <h3>Visual work shaped by landscapes, atmosphere, and composition.</h3>
+            <p>
+              A separate page for the creative side of the portfolio.
+            </p>
+            <a class="text-link" href="photography.html">Open photography page</a>
+          </article>
+        </div>
+      </section>
+
+      
+    </main>
+  </div>
+</body>
+</html>
